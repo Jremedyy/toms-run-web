@@ -3,9 +3,8 @@ import MobileTabletNav from "./MobileHeader";
 
 const Header = () => {
   const menuItems = [
-    { label: "About", href: "" },
-    { label: "Event Details", href: "" },
-    { label: "Sign Up", href: "" },
+    { label: "Tool Box", href: "" },
+    { label: "Team Application", href: "" },
   ];
   return (
     <HeaderWrapper>

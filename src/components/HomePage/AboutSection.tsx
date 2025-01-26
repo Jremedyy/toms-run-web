@@ -9,7 +9,7 @@ import styled from "styled-components";
 
 const AboutSection = () => {
   return (
-    <SiteGrid>
+    <>
       <Wrapper>
         <H3>{"About"}</H3>
         <SectionContentWrapper>
@@ -20,7 +20,7 @@ const AboutSection = () => {
           </SectionContent>
         </SectionContentWrapper>
       </Wrapper>
-    </SiteGrid>
+    </>
   );
 };
 export default AboutSection;

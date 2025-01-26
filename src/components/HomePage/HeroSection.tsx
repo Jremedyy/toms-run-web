@@ -10,7 +10,7 @@ const HeroSection = () => {
   ];
 
   return (
-    <SiteGrid>
+    <>
       <Wrapper>
         <HeroContent>
           <DetailsWrapper>
@@ -42,18 +42,21 @@ const HeroSection = () => {
           ))}
         </SealGroupWrapper>
       </Wrapper>
-    </SiteGrid>
+    </>
   );
 };
 
 export default HeroSection;
-const Wrapper = styled(SectionWrapper)`
+const Wrapper = styled.div`
+  display: flex;
+  width: 100%;
   gap: 1rem;
   flex-direction: column;
   grid-column: 1 / span 4;
 
   @media only screen and (min-width: 768px) {
     grid-column: 1 / span 8;
+    padding: 1rem;
   }
   @media only screen and (min-width: 1024px) {
     flex-direction: row;
@@ -67,13 +70,17 @@ const Wrapper = styled(SectionWrapper)`
 const HeroContent = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
   color: white;
   z-index: 2;
   flex: 1 1 50%;
+
+  @media only screen and (min-width: 1024px) {
+    justify-content: space-between;
+  }
 `;
 
 const H1 = styled.h1`
@@ -108,7 +115,14 @@ const DetailsWrapper = styled.div`
   justify-content: center;
   align-items: center;
   gap: 20px;
-  text-align: left;
+  text-align: center;
+  width: 75%;
+  padding: 1rem;
+
+  @media only screen and (min-width: 1024px) {
+    width: 100%;
+    padding: unset;
+  }
 `;
 
 const HeroImageWrapper = styled.div`
@@ -139,6 +153,7 @@ const SealGroupWrapper = styled.div`
   justify-content: center;
   width: 100%;
   gap: 1rem;
+  padding: 1rem;
 
   @media only screen and (min-width: 1024px) {
     gap: 2.5rem;

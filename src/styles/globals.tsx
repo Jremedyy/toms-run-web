@@ -46,11 +46,10 @@ export const SiteGrid = styled.div`
   margin: 0 auto;
   width: 100%;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr;
   grid-gap: 10px;
   grid-auto-flow: column;
   justify-items: center;
-
+  grid-template-rows: auto;
   @media only screen and (min-width: 768px) {
     grid-template-columns: repeat(8, 1fr);
   }
@@ -67,6 +66,7 @@ export const H3 = styled.h3`
   font-size: 2rem;
   text-align: left;
   padding: 20px 0;
+  text-decoration: underline;
 `;
 
 export const SectionContent = styled.div`
@@ -99,10 +99,11 @@ export const SectionWrapper = styled.div`
   width: 100%;
   grid-column: 1 / span 4;
   padding: 1rem;
+
   @media only screen and (min-width: 768px) {
-    grid-column: 1 / span 8;
+    grid-column: 3 / span 6;
   }
   @media only screen and (min-width: 1024px) {
-    grid-column: 3 / span 8;
+    grid-column: 4 / span 9;
   }
 `;

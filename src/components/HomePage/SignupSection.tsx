@@ -1,18 +1,20 @@
-import { H3, SectionContent, SectionContentWrapper, SectionWrapper, SiteGrid } from "@/styles/globals";
+import {
+  H3,
+  SectionContent,
+  SectionContentWrapper,
+  SectionWrapper,
+  SiteGrid,
+} from "@/styles/globals";
 import styled from "styled-components";
 
 const SignupSection = () => {
   return (
-    <SiteGrid>
-      <Wrapper>
-        <H3>{"Event Sign Up"}</H3>
-        <SectionContentWrapper>
-          <SectionContent>
-         
-          </SectionContent>
-        </SectionContentWrapper>
-      </Wrapper>
-    </SiteGrid>
+    <Wrapper>
+      <H3>{"Event Sign Up"}</H3>
+      <SectionContentWrapper>
+        <SectionContent></SectionContent>
+      </SectionContentWrapper>
+    </Wrapper>
   );
 };
 

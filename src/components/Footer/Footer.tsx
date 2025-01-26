@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Footer = () => {
   return (
     <SiteGrid>
-      <Wrapper>{"Thanks for Scrolling!"}</Wrapper>
+      <Wrapper>{"Contact: tomsrunrelay@gmail.com"}</Wrapper>
     </SiteGrid>
   );
 };
@@ -18,8 +18,9 @@ const Wrapper = styled.div`
   height: 100px;
   justify-content: center;
   align-items: center;
-  color: var(--accent-color-primary);
+  color: white;
   font-family: var(--header-font);
+  border-top: 1px solid var(--text-primary);
   @media only screen and (min-width: 768px) {
     grid-column: 1/9;
     font-size: 26px;
