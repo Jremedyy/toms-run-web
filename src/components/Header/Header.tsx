@@ -3,8 +3,14 @@ import MobileTabletNav from "./MobileHeader";
 
 const Header = () => {
   const menuItems = [
-    { label: "Tool Box", href: "" },
-    { label: "Team Application", href: "" },
+    {
+      label: "Tool Box",
+      href: "https://files.tomsrunrelay.org/Toms-Run-Files%2FMISC%2Ftomsruntoolbox.pdf",
+    },
+    {
+      label: "Team Application",
+      href: "https://files.tomsrunrelay.org/Toms-Run-Files%2FTeam%20Application%2Ftomsrunapplication%202024.pdf",
+    },
   ];
   return (
     <HeaderWrapper>
@@ -14,7 +20,9 @@ const Header = () => {
         </LogoWrapper>
         <NavLinkWrapper>
           {menuItems.map((link) => (
-            <NavLink key={link.label}>{link.label}</NavLink>
+            <NavLink href={link.href} target="_blank" key={link.label}>
+              {link.label}
+            </NavLink>
           ))}
         </NavLinkWrapper>
       </LimitSize>
@@ -56,7 +64,7 @@ const NavLinkWrapper = styled.div`
   align-items: center;
 `;
 
-const NavLink = styled.div`
+const NavLink = styled.a`
   color: var(--text-primary);
   text-transform: uppercase;
   font-weight: 500;
