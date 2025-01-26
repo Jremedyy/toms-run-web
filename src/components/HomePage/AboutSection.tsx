@@ -1,7 +1,6 @@
 import {
   SiteGrid,
   SectionContentWrapper,
-  DecorativeLine,
   H3,
   SectionContent,
   SectionWrapper,
