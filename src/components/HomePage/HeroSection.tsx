@@ -1,4 +1,3 @@
-import { SectionWrapper, SiteGrid } from "@/styles/globals";
 import styled from "styled-components";
 
 const HeroSection = () => {

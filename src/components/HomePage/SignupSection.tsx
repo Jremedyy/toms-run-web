@@ -3,7 +3,7 @@ import {
   SectionContent,
   SectionContentWrapper,
   SectionWrapper,
-  SiteGrid,
+
 } from "@/styles/globals";
 import styled from "styled-components";
 

@@ -1,5 +1,4 @@
 import {
-  SiteGrid,
   SectionContentWrapper,
   H3,
   SectionContent,

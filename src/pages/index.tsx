@@ -3,7 +3,6 @@ import {
   HeroSection,
   AboutSection,
   EventDetailsSection,
-  SignupSection,
   EventDetailsSidebar,
 } from "@/components/";
 import { SiteGrid } from "@/styles/globals";
