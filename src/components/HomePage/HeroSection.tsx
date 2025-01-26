@@ -79,6 +79,7 @@ const HeroContent = styled.div`
 
   @media only screen and (min-width: 1024px) {
     justify-content: space-between;
+    padding: 2rem;
   }
 `;
 
@@ -104,7 +105,7 @@ const Date = styled.h2`
   font-size: 1.5rem;
   text-align: center;
   @media only screen and (min-width: 1024px) {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 `;
 
