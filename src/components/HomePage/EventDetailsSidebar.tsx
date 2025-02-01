@@ -67,7 +67,7 @@ const EventDetailsSidebar = ({ bottomRef }: EventDetailsSidebarProps) => {
               <h4>Files:</h4>
             </H4Wrapper>
             {fileLinks.map(({ href, label }, index) => (
-              <FileLink key={index} href={href}>
+              <FileLink key={index} href={href} target="_blank">
                 {label}
               </FileLink>
             ))}
