@@ -1,20 +1,26 @@
+// NavbarLayout.tsx
 import styled from "styled-components";
 import { ReactNode } from "react";
 import { Header, Footer } from "@/components";
 
 export interface NavbarLayoutProps {
   children: ReactNode;
+  bottomRef: React.RefObject<HTMLDivElement | null>;
 }
 
-const NavbarLayout = (props: NavbarLayoutProps) => {
+const NavbarLayout = ({ children, bottomRef }: NavbarLayoutProps) => {
+  const scrollToBottom = () => {
+    if (bottomRef && bottomRef.current) {
+      bottomRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <>
-      <Wrapper>
-        <Header />
-        <Main>{props.children}</Main>
-        <Footer />
-      </Wrapper>
-    </>
+    <Wrapper>
+      <Header onEventDetailClick={scrollToBottom} />
+      <Main ref={bottomRef}>{children}</Main>
+      <Footer />
+    </Wrapper>
   );
 };
 

@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
   --text-primary: var(--color-secondary);
   --text-secondary: rgb(10,20,42);
   --background-color-primary: var(--color-primary);
-  --nav-height-mobile: 60px;
+  --nav-height-mobile: 80px;
   --nav-height-desktop: 80px;
 
 }

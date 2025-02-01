@@ -14,7 +14,7 @@ const CourseDetailsSection = () => {
         <SectionContentWrapper>
           <Content>
             {
-              "The race starts in Cumberland, Maryland after midnight on the first day (Saturday). Runners, accompanied at all times by a bike escort, take turns in a relay run entirely along the historic "
+              "The relay starts in Cumberland, Maryland after midnight on Friday. Runners, accompanied at all times by a bike escort, take turns in a 200 mile relay run entirely along the historic "
             }
             <StyledLink
               href="https://www.nps.gov/choh/index.htm"
@@ -32,7 +32,7 @@ const CourseDetailsSection = () => {
               {"Mount Vernon Trail"}
             </StyledLink>
             {
-              " to Alexandria, Virginia. The finish is at Fort Hunt Park near Mt. Vernon. The run proceeds through Saturday and ends when the teams cross the finish line together as close to 11:00 AM on Sunday as possible. Finishing at 11:00 AM presents the logistical challenge of determining the most advantageous time to start after midnight on Friday and getting all the team members together for the finish. Runners are on the course during the entire run, including at night. Other logistical challenges are keeping everyone fed and rested, determining the best places along the course to exchange runners and bikers, and finding those places along the many difficult rural roads accessing the canal. For a copy of the course description with directions to the exchange points, click "
+              " to Alexandria, Virginia. The finish is at Fort Hunt Park near Mt. Vernon. The run proceeds through Saturday and ends when the teams cross the finish line together as close to 11:00 AM on Sunday as possible. Finishing at 11:00 AM presents the logistical challenge of determining the most advantageous time to start after midnight on Friday and get all the team members together for the finish. Runners are on the course during the entire run, including at night. Other logistical challenges are keeping everyone fed and rested, determining the best places along the course to exchange runners and bikers, and finding those places along the many difficult rural roads accessing the canal. For a copy of the course description with directions to the exchange points, click "
             }
             <StyledLink
               href="https://example.com/course-description"
@@ -44,11 +44,11 @@ const CourseDetailsSection = () => {
         </SectionContentWrapper>
       </Wrapper>
       <Wrapper>
-        <H3>{"The Point"}</H3>
+        <H3>{"Course Purpose"}</H3>
         <SectionContentWrapper>
           <Content>
             {
-              "The unofficial Tom's Run record is 23:30:00. The official finish time is 11:00 am. So, teams that finish before 11 AM have time added to their race time up to 11 AM. Finishing early is not a benefit. The challenge, therefore, for a team wanting to finish as fast as possible, is being able to judge the start time and maintain the team's pace to finish precisely at 11 AM. That said, Tom's Run is NOT a race!!! It is a team-building, memorial fitness event. The POINT is not to reach the finish line first, but to reach it together. Oh! .... and to have a lot of fun along the way. That said, a little trash-talking and competition among teams is probably a healthy thing that makes the event fun."
+              "Honor CWO4 Tom Brooks, Provide a logistics challenge, and Foster camaraderie. Tom's Run is NOT a race. It is a team building, memorial fitness event!!! The POINT is not to reach the finish line first, but to reach it together.  The challenge is being able to judge the start time and maintain the team's pace to finish precisely at 11 AM. ... and to have a lot of fun along the way. That said, a little trash-talking and competition among teams is probably a healthy thing that makes the event fun."
             }
           </Content>
         </SectionContentWrapper>

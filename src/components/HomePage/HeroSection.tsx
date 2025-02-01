@@ -14,20 +14,20 @@ const HeroSection = () => {
         <HeroContent>
           <DetailsWrapper>
             <H1>
-              {`27th Annual Tom’s Run Relay:`} <br />{" "}
+              {`27th Annual Tom’s Run Relay`} <br />{" "}
             </H1>
             <Paragraph>
               {
                 "A 200-mile team-building fitness event in memory of CWO4 Tom Brooks U.S. Coast Guard"
               }
             </Paragraph>
-            <Date>{"May 31st - June 2nd"}</Date>
+            <Date>{"May 30th - June 1st"}</Date>
             <Date>{"Cumberland, MD to Alexandria, Va"}</Date>
           </DetailsWrapper>
         </HeroContent>
         <HeroImageWrapper>
           <HeroImage
-            src="https://www.ucsvt.org/wp-content/uploads/2022/12/T3_4413-1536x1024.jpg"
+            src="https://tomsrunrelay.org/Toms-Run-Hero-Image.jpg"
             alt="Hero Image"
           />
         </HeroImageWrapper>

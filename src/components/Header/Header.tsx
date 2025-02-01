@@ -1,17 +1,6 @@
 import styled from "styled-components";
-import MobileTabletNav from "./MobileHeader";
 
-const Header = () => {
-  const menuItems = [
-    {
-      label: "Tool Box",
-      href: "https://files.tomsrunrelay.org/Toms-Run-Files%2FMISC%2Ftomsruntoolbox.pdf",
-    },
-    {
-      label: "Team Application",
-      href: "https://files.tomsrunrelay.org/Toms-Run-Files%2FTeam%20Application%2Ftomsrunapplication%202024.pdf",
-    },
-  ];
+const Header = ({ onEventDetailClick }: { onEventDetailClick: () => void }) => {
   return (
     <HeaderWrapper>
       <LimitSize>
@@ -19,14 +8,11 @@ const Header = () => {
           <img src="https://tomsrunrelay.org/Toms_Run_Logo.png" />
         </LogoWrapper>
         <NavLinkWrapper>
-          {menuItems.map((link) => (
-            <NavLink href={link.href} target="_blank" key={link.label}>
-              {link.label}
-            </NavLink>
-          ))}
+          <NavLink onClick={() => onEventDetailClick()}>
+            {"Event Details"}
+          </NavLink>
         </NavLinkWrapper>
       </LimitSize>
-      <MobileTabletNav menuItems={menuItems} />
     </HeaderWrapper>
   );
 };
@@ -72,10 +58,14 @@ const NavLink = styled.a`
   &:hover {
     text-decoration: underline;
   }
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
 `;
 
 const LimitSize = styled.div`
-  display: none;
+  display: flex;
+  padding: 20px;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
