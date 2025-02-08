@@ -35,7 +35,7 @@ const CourseDetailsSection = () => {
               " to Alexandria, Virginia. The finish is at Fort Hunt Park near Mt. Vernon. The run proceeds through Saturday and ends when the teams cross the finish line together as close to 11:00 AM on Sunday as possible. Finishing at 11:00 AM presents the logistical challenge of determining the most advantageous time to start after midnight on Friday and get all the team members together for the finish. Runners are on the course during the entire run, including at night. Other logistical challenges are keeping everyone fed and rested, determining the best places along the course to exchange runners and bikers, and finding those places along the many difficult rural roads accessing the canal. For a copy of the course description with directions to the exchange points, click "
             }
             <StyledLink
-              href="https://example.com/course-description"
+              href="https://files.tomsrunrelay.org/Toms-Run-Files/MISC/tomsruncoursemap%202025.pdf"
               target="_blank"
             >
               {"HERE."}

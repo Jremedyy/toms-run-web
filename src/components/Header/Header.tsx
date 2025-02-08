@@ -8,9 +8,9 @@ const Header = ({ onEventDetailClick }: { onEventDetailClick: () => void }) => {
           <img src="https://tomsrunrelay.org/Toms_Run_Logo.png" />
         </LogoWrapper>
         <NavLinkWrapper>
-          <NavLink onClick={() => onEventDetailClick()}>
+          {/* <NavLink onClick={() => onEventDetailClick()}>
             {"Event Details"}
-          </NavLink>
+          </NavLink> */}
         </NavLinkWrapper>
       </LimitSize>
     </HeaderWrapper>
@@ -31,7 +31,6 @@ const HeaderWrapper = styled.header`
   @media only screen and (min-width: 1024px) {
     height: var(--nav-height-desktop);
     grid-column: 1/13;
-    padding: 0 40px;
   }
 `;
 
@@ -55,6 +54,7 @@ const NavLink = styled.a`
   text-transform: uppercase;
   font-weight: 500;
   cursor: pointer;
+  padding: 1rem;
   &:hover {
     text-decoration: underline;
   }
@@ -65,7 +65,7 @@ const NavLink = styled.a`
 
 const LimitSize = styled.div`
   display: flex;
-  padding: 20px;
+
   justify-content: center;
   align-items: center;
   margin: 0 auto;
