@@ -9,15 +9,15 @@ export interface NavbarLayoutProps {
 }
 
 const NavbarLayout = ({ children, bottomRef }: NavbarLayoutProps) => {
-  const scrollToBottom = () => {
-    if (bottomRef && bottomRef.current) {
-      bottomRef.current.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  // const scrollToBottom = () => {
+  //   if (bottomRef && bottomRef.current) {
+  //     bottomRef.current.scrollIntoView({ behavior: "smooth" });
+  //   }
+  // };
 
   return (
     <Wrapper>
-      <Header onEventDetailClick={scrollToBottom} />
+      <Header />
       <Main ref={bottomRef}>{children}</Main>
       <Footer />
     </Wrapper>
