@@ -8,9 +8,9 @@ const Header = ({ onEventDetailClick }: { onEventDetailClick: () => void }) => {
           <img src="https://tomsrunrelay.org/Toms_Run_Logo.png" />
         </LogoWrapper>
         <NavLinkWrapper>
-          {/* <NavLink onClick={() => onEventDetailClick()}>
+          <NavLink onClick={() => onEventDetailClick()}>
             {"Event Details"}
-          </NavLink> */}
+          </NavLink>
         </NavLinkWrapper>
       </LimitSize>
     </HeaderWrapper>
@@ -50,6 +50,7 @@ const NavLinkWrapper = styled.div`
 `;
 
 const NavLink = styled.a`
+  display: none;
   color: var(--text-primary);
   text-transform: uppercase;
   font-weight: 500;
