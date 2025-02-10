@@ -49,7 +49,7 @@ const EventDetailsSidebar = ({ bottomRef }: EventDetailsSidebarProps) => {
   return (
     <Wrapper ref={bottomRef}>
       <ImgWrapper>
-        <Img src="https://tomsrunrelay.org/Toms_Run_Logo.png" />
+        <Img src="https://images.tomsrunrelay.org/Toms_Run_Logo.png" />
       </ImgWrapper>
       <ContentWrapper>
         <H3>{"Event Details"}</H3>
