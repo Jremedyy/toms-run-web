@@ -5,7 +5,7 @@ const Header = () => {
     <HeaderWrapper>
       <LimitSize>
         <LogoWrapper>
-          <img src="https://tomsrunrelay.org/Toms_Run_Logo.png" />
+          <img src="https://images.tomsrunrelay.org/Toms_Run_Logo.png" />
         </LogoWrapper>
       </LimitSize>
     </HeaderWrapper>
