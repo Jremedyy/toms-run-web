@@ -27,7 +27,7 @@ const HeroSection = () => {
         </HeroContent>
         <HeroImageWrapper>
           <HeroImage
-            src="https://tomsrunrelay.org/Toms-Run-Hero-Image.jpg"
+            src="https://images.tomsrunrelay.org/Toms-Run-Hero-Image.jpg"
             alt="Hero Image"
           />
         </HeroImageWrapper>
