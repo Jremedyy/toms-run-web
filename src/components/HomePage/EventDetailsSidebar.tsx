@@ -9,6 +9,13 @@ const EventDetailsSidebar = ({ bottomRef }: EventDetailsSidebarProps) => {
     "21 N Wineow Street Cumberland,",
     "MD 21502",
     "Phone: 1-301-722-0340",
+    <FileLink
+      key="hotel-link"
+      href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1737658046361&key=GRP&guestreslink2=true&app=resvlink"
+      target="_blank"
+    >
+      Hotel special rate (good through 30 April)
+    </FileLink>,
   ];
 
   const fileLinks = [
@@ -63,7 +70,7 @@ const EventDetailsSidebar = ({ bottomRef }: EventDetailsSidebarProps) => {
             ))}
           </Detail>
           <Detail>
-            <H4Wrapper>
+            <H4Wrapper style={{ paddingTop: "1rem" }}>
               <h4>Files:</h4>
             </H4Wrapper>
             {fileLinks.map(({ href, label }, index) => (
@@ -148,5 +155,5 @@ const FileLink = styled.a`
 `;
 
 const H4Wrapper = styled.div`
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.25rem;
 `;
