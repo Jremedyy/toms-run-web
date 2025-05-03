@@ -32,7 +32,7 @@ const HeroSection = () => {
           />
         </HeroImageWrapper>
       </Wrapper>
-      <Wrapper>
+      <SealVideoWrapper>
         <SealGroupWrapper>
           {coastGuardSeals.map((seal, index) => (
             <SealWrapper key={index}>
@@ -40,7 +40,8 @@ const HeroSection = () => {
             </SealWrapper>
           ))}
         </SealGroupWrapper>
-      </Wrapper>
+        <StyledIframe src="https://www.youtube.com/embed/AWsPijlHO9g?si=wrENQOtXKXYDhtK8" />
+      </SealVideoWrapper>
     </>
   );
 };
@@ -162,4 +163,22 @@ const SealGroupWrapper = styled.div`
 
 const Img = styled.img`
   width: 100%;
+`;
+
+const StyledIframe = styled.iframe`
+  max-width: 75%;
+  width: 100%;
+  height: 100%;
+  border: none;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+`;
+
+const SealVideoWrapper = styled(Wrapper)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
 `;
