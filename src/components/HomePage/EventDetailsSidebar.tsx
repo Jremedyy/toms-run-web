@@ -33,10 +33,10 @@ const EventDetailsSidebar = ({ bottomRef }: EventDetailsSidebarProps) => {
     },
     {
       href: "https://files.tomsrunrelay.org/Toms-Run-Files/MISC/tomsrunequipment%20.pdf",
-      label: "Recommended Equiptment",
+      label: "Recommended Equipment",
     },
     {
-      href: "https://files.tomsrunrelay.org/Toms-Run-Files/MISC/tomsrundisclaimer%20.pdf",
+      href: "https://files.tomsrunrelay.org/Toms-Run-Files/MISC/tomsrundisclaimer_.pdf",
       label: "Disclaimer Form",
     },
     {
