@@ -1,0 +1,20 @@
+#!/usr/bin/env sh
+
+# Get the current branch name
+branch=$(git rev-parse --abbrev-ref HEAD)
+
+# Only run build check for main and development branches
+if [ "$branch" = "main" ] || [ "$branch" = "development" ]; then
+  echo "🔍 Running build check before pushing to $branch..."
+  
+  # Run the build
+  npm run build
+  
+  # Check if build was successful
+  if [ $? -ne 0 ]; then
+    echo "❌ Build failed! Please fix the errors before pushing to $branch."
+    exit 1
+  fi
+  
+  echo "✅ Build successful! Pushing to $branch..."
+fi

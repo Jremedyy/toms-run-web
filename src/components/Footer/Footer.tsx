@@ -2,8 +2,6 @@ import styled from "styled-components";
 import { IMAGES, DOCUMENTS, EXTERNAL_LINKS, CONTACT } from "@/constants";
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
-
   const quickLinks = [
     { href: "#about", label: "About" },
     { href: "#course", label: "Course" },
@@ -287,12 +285,6 @@ const BottomSection = styled.div`
     flex-direction: row;
     justify-content: right;
   }
-`;
-
-const Copyright = styled.span`
-  font-family: var(--font-body);
-  font-size: 0.8125rem;
-  color: var(--text-muted);
 `;
 
 const Memorial = styled.span`
