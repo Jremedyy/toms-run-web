@@ -78,9 +78,7 @@ const Footer = () => {
         <Divider />
 
         <BottomSection>
-          <Copyright>
-            © {currentYear} Tom&apos;s Run Relay. All rights reserved.
-          </Copyright>
+
           <Memorial>
             In memory of <Strong>CWO4 Tom Brooks</Strong>, U.S. Coast Guard
           </Memorial>
@@ -287,7 +285,7 @@ const BottomSection = styled.div`
 
   @media only screen and (min-width: 768px) {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: right;
   }
 `;
 

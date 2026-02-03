@@ -39,17 +39,12 @@ export default class MyDocument extends Document {
         style={{ backgroundColor: "var(--background-color-primary)" }}
       >
         <Head>
-          <link
-            rel="icon"
-            href="https://tomsrunrelay.org/Toms_Run_Logo.png"
-            type="image/png"
-            sizes="180x180"
-          />
-          <link
-            rel="apple-touch-icon"
-            href="/apple-touch-icon.png"
-            type="image/png"
-          />
+          {/* Favicon - Local file for better performance */}
+          <link rel="icon" type="image/png" sizes="32x32" href="/Toms_Run_Logo.png" />
+          <link rel="icon" type="image/png" sizes="16x16" href="/Toms_Run_Logo.png" />
+          <link rel="icon" type="image/png" sizes="192x192" href="/Toms_Run_Logo.png" />
+          <link rel="apple-touch-icon" sizes="180x180" href="/Toms_Run_Logo.png" />
+          <link rel="shortcut icon" href="/Toms_Run_Logo.png" />
           {/* Google Fonts - Athletic Display + Clean Body */}
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

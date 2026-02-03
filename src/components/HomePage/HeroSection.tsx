@@ -469,10 +469,10 @@ const SealWrapper = styled.div<{ $index: number }>`
   justify-content: center;
   align-items: center;
   aspect-ratio: 1;
-  width: 100px;
-  padding: 0.75rem;
+  width: 150px;
+  padding: 1rem;
   background: rgba(255, 255, 255, 0.03);
-  border-radius: 16px;
+  border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.05);
   transition: all var(--transition-normal);
   animation: ${scaleIn} 0.5s ease forwards;
@@ -486,13 +486,14 @@ const SealWrapper = styled.div<{ $index: number }>`
   }
 
   @media only screen and (min-width: 768px) {
-    width: 140px;
-    padding: 1rem;
+    width: 200px;
+    padding: 1.25rem;
   }
 
   @media only screen and (min-width: 1024px) {
-    width: 160px;
-    padding: 1.25rem;
+    width: 100%;
+    padding: 1.5rem;
+    max-width: 280px;
   }
 `;
 

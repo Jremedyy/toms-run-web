@@ -1,0 +1,6 @@
+# robots.txt for Tom's Run Relay
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://tomsrunrelay.org/sitemap.xml
