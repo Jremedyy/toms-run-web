@@ -50,7 +50,13 @@ export default class MyDocument extends Document {
             href="/apple-touch-icon.png"
             type="image/png"
           />
-
+          {/* Google Fonts - Athletic Display + Clean Body */}
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+            rel="stylesheet"
+          />
           <meta name="robots" content="max-image-preview:large"></meta>
         </Head>
 
