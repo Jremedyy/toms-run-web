@@ -141,11 +141,6 @@ const fadeInLeft = keyframes`
   }
 `;
 
-const pulse = keyframes`
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-`;
-
 // ============================================
 // STYLED COMPONENTS
 // ============================================

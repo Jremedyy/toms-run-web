@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import { IMAGES, DOCUMENTS, EXTERNAL_LINKS, CONTACT } from "@/constants";
 
 const Footer = () => {
@@ -96,18 +96,6 @@ const Footer = () => {
 };
 
 export default Footer;
-
-// ============================================
-// ANIMATIONS
-// ============================================
-const drawPath = keyframes`
-  from {
-    stroke-dashoffset: 1000;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-`;
 
 // ============================================
 // STYLED COMPONENTS

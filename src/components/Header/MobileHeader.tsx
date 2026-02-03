@@ -1,6 +1,7 @@
 "use client";
 
 import { CloseMenu, HamburgerMenu } from "../../Icons";
+import { IMAGES } from "@/constants";
 
 import { useState } from "react";
 import Link from "next/link";
@@ -17,7 +18,7 @@ const MobileTabletNav = ({ menuItems }: MobileTabletNavProps) => {
     <>
       <MenuContainer>
         <LogoWrapper>
-          <img src="https://tomsrunrelay.org/Toms_Run_Logo.png" />
+          <img src={IMAGES.logo} alt="Tom's Run Logo" />
         </LogoWrapper>
         <MenuButton onClick={() => setIsMenuOpen(!isMenuOpen)}>
           {isMenuOpen ? <CloseMenu /> : <HamburgerMenu />}
