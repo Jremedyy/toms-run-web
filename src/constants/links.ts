@@ -34,11 +34,16 @@ export const SEALS = [
 // DOCUMENTS & FILES
 // ============================================
 export const DOCUMENTS = {
-  teamApplication: "https://files.tomsrunrelay.org/Toms-Run-Files/MISC/28th%20Toms%20Run%20team%20application.pdf",
-  courseMap: "https://files.tomsrunrelay.org/Toms-Run-Files/MISC/tomsruncoursemap%202025.pdf",
-  legPlanner: "https://files.tomsrunrelay.org/Toms-Run-Files/MISC/Toms%20Run%20Leg%20Planner%202026.xlsx",
-  equipment: "https://files.tomsrunrelay.org/Toms-Run-Files/MISC/tomsrunequipment%20.pdf",
-  disclaimer: "https://files.tomsrunrelay.org/Toms-Run-Files/MISC/tomsrundisclaimer%20.pdf",
+  teamApplication:
+    "https://files.tomsrunrelay.org/Toms-Run-Files/MISC/28th%20Toms%20Run%20team%20application.pdf",
+  courseMap:
+    "https://files.tomsrunrelay.org/Toms-Run-Files/MISC/tomsruncoursemap%202025.pdf",
+  legPlanner:
+    "https://files.tomsrunrelay.org/Toms-Run-Files/MISC/Toms%20Run%20Leg%20Planner%202026.xlsx",
+  equipment:
+    "https://files.tomsrunrelay.org/Toms-Run-Files/MISC/tomsrunequipment%20.pdf",
+  disclaimer:
+    "https://files.tomsrunrelay.org/Toms-Run-Files/MISC/tomsrundisclaimer%20.pdf",
 } as const;
 
 // ============================================
@@ -48,7 +53,8 @@ export const EXTERNAL_LINKS = {
   coCanal: "https://www.nps.gov/choh/index.htm",
   mtVernonTrail: "https://www.nps.gov/gwmp/planyourvisit/mtvernontrail.htm",
   fortHuntPark: "https://www.nps.gov/gwmp/planyourvisit/fort-hunt-park.htm",
-  hotelBooking: "https://app.marriott.com/reslink?id=1769011063861&key=GRP&app=resvlink",
+  hotelBooking:
+    "https://app.marriott.com/reslink?id=1769011063861&key=GRP&app=resvlink",
 } as const;
 
 // ============================================

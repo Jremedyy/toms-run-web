@@ -16,7 +16,8 @@ const HeroSection = () => {
             </H1>
             <Paragraph>
               A 200-mile team-building fitness event in memory of
-              <MemorialHighlight> CWO4 Tom Brooks</MemorialHighlight>, U.S. Coast Guard
+              <MemorialHighlight> CWO4 Tom Brooks</MemorialHighlight>, U.S.
+              Coast Guard
             </Paragraph>
             <DateWrapper>
               <DateIcon>📅</DateIcon>
@@ -26,16 +27,10 @@ const HeroSection = () => {
               </DateText>
             </DateWrapper>
             <ButtonGroup>
-              <PrimaryButton
-                href={DOCUMENTS.teamApplication}
-                target="_blank"
-              >
+              <PrimaryButton href={DOCUMENTS.teamApplication} target="_blank">
                 Register Your Team
               </PrimaryButton>
-              <SecondaryButton
-                href={DOCUMENTS.courseMap}
-                target="_blank"
-              >
+              <SecondaryButton href={DOCUMENTS.courseMap} target="_blank">
                 View Course Map
               </SecondaryButton>
             </ButtonGroup>
@@ -138,7 +133,7 @@ const HeroWrapper = styled.div`
 
   /* Topographic background pattern */
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     inset: 0;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23ffffff' stroke-width='1' stroke-opacity='0.03'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 702 838 886 700 1016 860 1031 690 914 615 786 716 1032 616 1019 767 891 650' /%3E%3Cpath d='M-52 158L76 122 106 74 51 0 114 38 147 99 94 149 69 176 0 207 96 214 57 264 -41 216 35 177 -75 140 -1 245' /%3E%3Cpath d='M295 247L383 171 454 210 399 290 335 310 283 248 356 189 267 136 286 212 197 234 240 303 151 317 205 258 119 273 186 170 261 195 260 136 182 79 270 110' /%3E%3Cpath d='M633 404L577 524 571 646 643 605 693 538 700 445 718 368 670 416 595 376 541 423 500 367 549 292 614 320 686 343 621 415 555 350' /%3E%3Cpath d='M1028 313L1117 350 1120 269 1041 220 1027 152 1054 68 1131 120 1176 215 1149 287 1099 344 1168 377 1108 445 1031 425 1073 339 1009 266' /%3E%3C/g%3E%3C/svg%3E");
@@ -220,7 +215,11 @@ const DetailsWrapper = styled.div`
 const EventBadge = styled.span`
   display: inline-block;
   padding: 0.5rem 1.25rem;
-  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  background: linear-gradient(
+    135deg,
+    var(--accent-primary),
+    var(--accent-secondary)
+  );
   color: white;
   font-family: var(--font-display);
   font-size: 1rem;
@@ -255,7 +254,11 @@ const H1 = styled.h1`
 
 const TitleAccent = styled.span`
   display: block;
-  background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+  background: linear-gradient(
+    90deg,
+    var(--accent-primary),
+    var(--accent-secondary)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

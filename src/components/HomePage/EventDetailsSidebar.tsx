@@ -66,7 +66,8 @@ const EventDetailsSidebar = ({ bottomRef }: EventDetailsSidebarProps) => {
           <CardBody>
             <LocationName>Fairfield Inn & Suites</LocationName>
             <LocationAddress>
-              21 N Wineow Street<br />
+              21 N Wineow Street
+              <br />
               Cumberland, MD 21502
             </LocationAddress>
             <LocationPhone>📞 1-301-722-0340</LocationPhone>
@@ -93,7 +94,11 @@ const EventDetailsSidebar = ({ bottomRef }: EventDetailsSidebarProps) => {
             <FileList>
               {fileLinks.map(({ href, label, icon }, index) => (
                 <FileItem key={index}>
-                  <FileLink href={href} target="_blank" rel="noopener noreferrer">
+                  <FileLink
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FileIcon>{icon}</FileIcon>
                     <span>{label}</span>
                     <DownloadIcon>↓</DownloadIcon>
@@ -112,7 +117,12 @@ const EventDetailsSidebar = ({ bottomRef }: EventDetailsSidebarProps) => {
           <CardBody>
             <TrailList>
               {trailLinks.map(({ href, label }, index) => (
-                <TrailLink key={index} href={href} target="_blank" rel="noopener noreferrer">
+                <TrailLink
+                  key={index}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   {label}
                   <ExternalIcon>↗</ExternalIcon>
                 </TrailLink>
@@ -287,7 +297,11 @@ const HotelLink = styled.a`
   gap: 0.75rem;
   padding: 0.875rem 1rem;
   margin-top: 0.5rem;
-  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  background: linear-gradient(
+    135deg,
+    var(--accent-primary),
+    var(--accent-secondary)
+  );
   border-radius: 10px;
   text-decoration: none;
   transition: all var(--transition-normal);
