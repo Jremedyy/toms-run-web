@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import { IMAGES, DOCUMENTS, EXTERNAL_LINKS } from "@/constants";
+import { IMAGES, DOCUMENTS, EXTERNAL_LINKS, HOTEL } from "@/constants";
 
 interface EventDetailsSidebarProps {
   bottomRef: React.RefObject<HTMLDivElement | null>;
@@ -64,7 +64,7 @@ const EventDetailsSidebar = ({ bottomRef }: EventDetailsSidebarProps) => {
             <CardTitle>Start Location</CardTitle>
           </CardHeader>
           <CardBody>
-            <LocationName>Fairfield Inn & Suites</LocationName>
+            <LocationName>{HOTEL.name}</LocationName>
             <LocationAddress>
               21 N Wineow Street
               <br />
@@ -78,8 +78,8 @@ const EventDetailsSidebar = ({ bottomRef }: EventDetailsSidebarProps) => {
             >
               <HotelLinkIcon>🏨</HotelLinkIcon>
               <HotelLinkText>
-                <span>Book Hotel (Special Rate)</span>
-                <small>Good through April 30</small>
+                <span>Book Group Rate ({HOTEL.groupRate})</span>
+                <small>Book by {HOTEL.bookingDeadline}</small>
               </HotelLinkText>
             </HotelLink>
           </CardBody>

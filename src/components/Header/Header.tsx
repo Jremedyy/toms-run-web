@@ -4,9 +4,10 @@ import { EVENT_INFO, IMAGES, DOCUMENTS } from "@/constants";
 
 const Header = () => {
   const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
-    e.preventDefault();
     const element = document.getElementById(sectionId);
+    // Off the homepage (e.g. /articles), let the "/#section" href navigate normally.
     if (element) {
+      e.preventDefault();
       const headerOffset = 100; // Account for sticky header
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
@@ -21,7 +22,7 @@ const Header = () => {
   return (
     <HeaderWrapper>
       <HeaderContent>
-        <LogoSection>
+        <LogoSection href="/" aria-label="Tom's Run Relay home">
           <LogoWrapper>
             <Logo src={IMAGES.logo} alt="Tom's Run Logo" />
           </LogoWrapper>
@@ -33,9 +34,10 @@ const Header = () => {
 
         <NavSection>
           <NavLinks>
-            <NavLink href="#about" onClick={(e) => scrollToSection(e, "about")}>About</NavLink>
-            <NavLink href="#course" onClick={(e) => scrollToSection(e, "course")}>Course</NavLink>
-            <NavLink href="#details" onClick={(e) => scrollToSection(e, "details")}>Details</NavLink>
+            <NavLink href="/#about" onClick={(e) => scrollToSection(e, "about")}>About</NavLink>
+            <NavLink href="/#course" onClick={(e) => scrollToSection(e, "course")}>Course</NavLink>
+            <NavLink href="/#details" onClick={(e) => scrollToSection(e, "details")}>Details</NavLink>
+            <NavLink href="/articles">Articles</NavLink>
           </NavLinks>
           <RegisterButton
             href={DOCUMENTS.teamApplication}
@@ -100,8 +102,9 @@ const HeaderContent = styled.div`
   }
 `;
 
-const LogoSection = styled.div`
+const LogoSection = styled.a`
   display: flex;
+  text-decoration: none;
   align-items: center;
   gap: 0.75rem;
 `;

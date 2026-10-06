@@ -1,10 +1,11 @@
 import styled from "styled-components";
-import { IMAGES, DOCUMENTS, EXTERNAL_LINKS, CONTACT } from "@/constants";
+import { IMAGES, DOCUMENTS, EXTERNAL_LINKS, CONTACT, SOCIAL } from "@/constants";
 
 const Footer = () => {
   const quickLinks = [
-    { href: "#about", label: "About" },
-    { href: "#course", label: "Course" },
+    { href: "/#about", label: "About" },
+    { href: "/#course", label: "Course" },
+    { href: "/articles", label: "Articles" },
     { href: DOCUMENTS.teamApplication, label: "Register", external: true },
   ];
 
@@ -66,6 +67,17 @@ const Footer = () => {
                   <ContactIcon>✉️</ContactIcon>
                   <ContactLink href={CONTACT.emailLink}>
                     {CONTACT.email}
+                  </ContactLink>
+                </ContactItem>
+                <ContactItem>
+                  <ContactIcon>📸</ContactIcon>
+                  <ContactLink
+                    href={SOCIAL.instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Tom's Run Relay on Instagram"
+                  >
+                    {SOCIAL.instagramHandle}
                   </ContactLink>
                 </ContactItem>
               </ContactInfo>

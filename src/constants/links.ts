@@ -7,9 +7,21 @@
 // EVENT INFO
 // ============================================
 export const EVENT_INFO = {
-  year: "28th",
-  dates: "May 29th - 31st, 2026",
-  yearNumber: 28,
+  year: "29th",
+  dates: "June 4th - 6th, 2027",
+  shortDates: "June 4-6, 2027",
+  yearNumber: 29,
+  startDate: "2027-06-04T00:01:00-04:00",
+  endDate: "2027-06-06T11:00:00-04:00",
+} as const;
+
+// ============================================
+// HOTEL (START LOCATION)
+// ============================================
+export const HOTEL = {
+  name: "Fairfield by Marriott Inn & Suites Cumberland",
+  groupRate: "$132/night",
+  bookingDeadline: "May 5, 2027",
 } as const;
 
 // ============================================
@@ -54,7 +66,15 @@ export const EXTERNAL_LINKS = {
   mtVernonTrail: "https://www.nps.gov/gwmp/planyourvisit/mtvernontrail.htm",
   fortHuntPark: "https://www.nps.gov/gwmp/planyourvisit/fort-hunt-park.htm",
   hotelBooking:
-    "https://app.marriott.com/reslink?id=1769011063861&key=GRP&app=resvlink",
+    "https://app.marriott.com/resview2?id=1790715324696&key=GRP&app=resvlink",
+} as const;
+
+// ============================================
+// SOCIAL
+// ============================================
+export const SOCIAL = {
+  instagram: "https://www.instagram.com/toms_run_relay",
+  instagramHandle: "@toms_run_relay",
 } as const;
 
 // ============================================

@@ -5,7 +5,7 @@ import { Header, Footer } from "@/components";
 
 export interface NavbarLayoutProps {
   children: ReactNode;
-  bottomRef: React.RefObject<HTMLDivElement | null>;
+  bottomRef?: React.RefObject<HTMLDivElement | null>;
 }
 
 const NavbarLayout = ({ children, bottomRef }: NavbarLayoutProps) => {
